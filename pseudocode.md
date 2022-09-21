@@ -55,7 +55,7 @@
   >headertext: displaySymbols() --> replace header text with randomized symbol obtained from function
   >recbutton: "NULL"
   >helpertext: "Your symbol is" + displaySymbol()
-  >circlebutton: resetButton() --> return to VIEW 1
+  >circlebutton: resetPage() --> return to VIEW 1
 
 
 ## FUNCTIONALITY ????????????????
