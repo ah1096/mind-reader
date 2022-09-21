@@ -1,0 +1,25 @@
+header{
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+}
+
+
+button {
+    border: none;
+    background-color: pink;
+    color: white;
+}
+
+#recbutton {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 80px;
+    padding-left: 80px;
+    border-radius: 5px;  
+}
+
+#circlebutton {
+    margin-top: 40px;
+    border-radius: 50%;
+    padding: 20px;
+}
