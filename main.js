@@ -1,6 +1,6 @@
 
 
-
+///////*STATE OBJECT*///////
 let state = {
     views: [
         /*VIEW 1*/
@@ -44,12 +44,26 @@ let state = {
         helpertext : "Your symbol is" + displaySymbol(),
         circlebutton : resetButton(),/* --> return to VIEW 1*/
         },
-
-
     ]
+}
+
+///////*VARIABLES*///////
+
+var headerText = document.getElementById("header");
+var helperText = document.getElementById("helper");
+var recbutton = document.getElementById("rebutton");
+var circlebutton = document.getElementById("circlebutton");
 
 
-
+///////* FUNCTIONS *///////
+function updatePage() { /* changes page to next view when circle button is clicked */
 
 }
 
+function resetPage() { /* returns to View 1 */
+
+}
+
+function toggleButton() { /* shows or hides button upon page update */
+
+}
