@@ -2,47 +2,50 @@
 
 ///////*STATE OBJECT*///////
 let state = {
+
+    currentPage: 0,
+
     views: [
         /*VIEW 1*/
         {headertext : "I can read your mind",
-        recbutton : NULL,
-        helpertext : NULL,
-        circlebutton : "NEXT", updatePage(), /* --> proceed to VIEW 2*/
+        recbutton : null,
+        helpertext : " ",
+        circlebutton : "NEXT", /* --> proceed to VIEW 2*/
         },
 
         /*VIEW 2*/
         {headertext: "Pick a number from 01-99",
-        recbutton : "NEXT", updatePage(), /* --> proceed to VIEW 3 */
+        recbutton : "NEXT", /* --> proceed to VIEW 3 */
         helpertext :"when you have your number click next",
-        circlebutton : resetPage(), /* --> return to VIEW 1 */
+        circlebutton : null,/*resetPage(), /* --> return to VIEW 1 */
         },
 
         /*VIEW 3*/
         {headertext : "Add both digits together to get a new number",
-        recbutton : "NEXT", updatePage(), /* --> proceed to VIEW 4 */
+        recbutton : "NEXT", /* --> proceed to VIEW 4 */
         helpertext : "Ex: 14 is 1 + 4 = 5, click Next to proceed",
-        circlebutton : resetPage() /* --> return to VIEW 1 */
+        circlebutton : null,/*resetPage() /* --> return to VIEW 1 */
         },
 
         /*VIEW 4*/
         {headertext : "Subtract your new number from the original number",
-        recbutton : "NEXT", updatePage(), /*--> proceed to VIEW 5*/
+        recbutton : "NEXT", /*--> proceed to VIEW 5*/
         helpertext : "Ex: 14 - 5 = 9",
-        circlebutton : resetPage() /*--> return to VIEW 1 */
+        circlebutton : null,/*resetPage() /*--> return to VIEW 1 */
         },
 
         /*VIEW 5*/
-        {headertext : displaySymbols(), "SYMBOL",
-        recbutton : "REVEAL", updatePage(), /*--> proceed to VIEW 6*/
+        {headertext : "SYMBOLS",
+        recbutton : "REVEAL", /*--> proceed to VIEW 6*/
         helpertext : "Find your new number. Note the symbol beside the number",
-        circlebutton : resetButton(), /*--> return to VIEW 1*/
+        circlebutton : null,/*resetButton(), /*--> return to VIEW 1*/
         },
 
         /*VIEW 6*/
-        {headertext : displaySymbols(), /* --> replace header text with randomized symbol obtained from function*/
-        recbutton : "NULL",
-        helpertext : "Your symbol is" + displaySymbol(),
-        circlebutton : resetButton(),/* --> return to VIEW 1*/
+        {headertext : null,/*displaySymbols(), /* --> replace header text with randomized symbol obtained from function*/
+        recbutton : null,
+        helpertext : "Your symbol is"  /*displaySymbol()*/,
+        circlebutton : null,/*resetPage(),/* --> return to VIEW 1*/
         },
     ]
 }
@@ -51,19 +54,34 @@ let state = {
 
 var headerText = document.getElementById("header");
 var helperText = document.getElementById("helper");
-var recbutton = document.getElementById("rebutton");
+var recbutton = document.getElementById("recbutton");
 var circlebutton = document.getElementById("circlebutton");
 
 
 ///////* FUNCTIONS *///////
-function updatePage() { /* changes page to next view when circle button is clicked */
 
-}
+function updatePage() { 
+    headerText.textContent = state.views[state.currentPage].headertext;
+    helperText.textContent = state.views[state.currentPage].helpertext;
+    recbutton.textContent = state.views[state.currentPage].recbutton;
+    
+}/* changes page to next view when circle button is clicked */
+
+circlebutton.addEventListener ("click", () => {state.currentPage++, updatePage()});
+
+function removeRecButton() { /*add a conditional to make this appear when it is needed*/
+    var elem = document.getElementById('recbutton');
+    elem.parentNode.removeChild(elem);
+   }
+
+   removeRecButton();
+
 
 function resetPage() { /* returns to View 1 */
 
 }
 
 function toggleButton() { /* shows or hides button upon page update */
-
+/* appendChild to add button???
+how do I remove the button???*/
 }
