@@ -74,7 +74,15 @@
 
 
 
-## START: begin program; make green tea according to user input
+## START: begin program; cycle through pages according to user input
+VIEW 1
+click circle button --> updatePage()
+VIEW 2
+click circle button --> updatePage()
+VIEW 3
+click circle button --> updatePage()
+...
 
-## END: end program; enjoy tea
+
+## END: end program
 
