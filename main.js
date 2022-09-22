@@ -82,7 +82,7 @@ var resetbutton = document.createElement("button");
     resetbutton.setAttribute('id', 'resetbutton'); /*add ID to be used in toggleButtons function*/
     document.body.appendChild(resetbutton);
     
-
+/////*FUNCTIONS CONTINUED*/////
 
 /*✅*/ function toggleRecButton() { /*add and remove Next/Reveal button according to View number*/
     console.log("toggleRecButton");
