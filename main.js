@@ -10,7 +10,7 @@ let state = {
         {headertext : "I can read your mind",
         recbutton : null,
         helpertext : " ",
-        circlebutton : "NEXT", /* --> proceed to VIEW 2*/
+        circlebutton : "go", /* --> proceed to VIEW 2*/
         },
 
         /*VIEW 2*/
@@ -67,10 +67,18 @@ var circlebutton = document.getElementById("circlebutton");
     circlebutton.textContent = state.views[state.currentPage].circlebutton; 
     
     toggleRecButton()
+
 }/* changes page to next view when circle button is clicked */
 /* swap to recbutton after View 1*/
 
-circlebutton.addEventListener ("click", () => {state.currentPage++, updatePage()});
+circlebutton.addEventListener ("click", () => {state.currentPage++, updatePage(), circlebutton.style.display = 'none'});
+/* ^^ change style to display = none to "remove" first button*/
+
+
+/////*NEW BUTTON*/////
+let resetbutton = document.createElement("button");
+    resetbutton.innerHTML = "reset";
+    document.body.appendChild(resetbutton);
 
 /*✅*/ function toggleRecButton() { /*add and remove Next/Reveal button according to view number*/
     console.log("toggleRecButton");
@@ -88,6 +96,7 @@ circlebutton.addEventListener ("click", () => {state.currentPage++, updatePage()
         state.currentPage = 0;
 
         updatePage();
+        circlebutton.style.display = 'block'
     }
 }
 
