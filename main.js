@@ -76,7 +76,7 @@ circlebutton.addEventListener ("click", () => {state.currentPage++, updatePage()
 
 
 /////*NEW BUTTON*/////
-let resetbutton = document.createElement("button");
+var resetbutton = document.createElement("button");
     resetbutton.innerHTML = "reset";
     document.body.appendChild(resetbutton);
 
