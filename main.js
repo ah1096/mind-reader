@@ -92,6 +92,13 @@ var resetbutton = document.createElement("button");
         else{
             recbutton.classList.remove('d-none')
             recbutton.classList.add('d-block')};
+
+    var resetbutton = document.getElementById('resetbutton');
+    if (state.currentPage === 0 || state.currentPage === 5){
+            resetbutton.classList.add('d-none')}
+        else{
+            resetbutton.classList.remove('d-none')
+            resetbutton.classList.add('d-block')};
 }
 
     toggleRecButton()
