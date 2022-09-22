@@ -78,7 +78,9 @@ circlebutton.addEventListener ("click", () => {state.currentPage++, updatePage()
 /////*NEW BUTTON*/////
 var resetbutton = document.createElement("button");
     resetbutton.innerHTML = "reset";
+    resetbutton.className = "resetbutton";
     document.body.appendChild(resetbutton);
+    
 
 
 /*✅*/ function toggleRecButton() { /*add and remove Next/Reveal button according to view number*/
