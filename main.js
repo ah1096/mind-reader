@@ -68,6 +68,7 @@ var circlebutton = document.getElementById("circlebutton");
     
     toggleRecButton()
 }/* changes page to next view when circle button is clicked */
+/* swap to recbutton after View 1*/
 
 circlebutton.addEventListener ("click", () => {state.currentPage++, updatePage()});
 
@@ -82,13 +83,15 @@ circlebutton.addEventListener ("click", () => {state.currentPage++, updatePage()
 }
     toggleRecButton()
 
-    function resetPage(){
-        if (state.currentPage > 0){
-            state.currentPage === 0
-        }
-    }
+/*✅*/ function resetPage(){ /*return to View 0 (first "page") */
+    if (state.currentPage > 0){
+        state.currentPage = 0;
 
-recbutton.addEventListener ("click", resetPage());
+        updatePage();
+    }
+}
+
+recbutton.addEventListener ("click", () => {resetPage()});
     
 
    /*
