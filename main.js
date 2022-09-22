@@ -86,6 +86,9 @@ circlebutton.addEventListener ("click", () => {state.currentPage++, updatePage()
    /*
 function resetPage() { /* returns to View 1 */
 
+/* SYMBOLS
+for loop to loop through symbols, use template literal to insert number that it loops through
+
 
 
 /*function toggleButton() { /* shows or hides button upon page update */
