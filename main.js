@@ -81,6 +81,14 @@ circlebutton.addEventListener ("click", () => {state.currentPage++, updatePage()
             recbutton.classList.add('d-block')};
 }
     toggleRecButton()
+
+    function resetPage(){
+        if (state.currentPage > 0){
+            state.currentPage === 0
+        }
+    }
+
+recbutton.addEventListener ("click", resetPage());
     
 
    /*
