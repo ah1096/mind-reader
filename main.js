@@ -84,7 +84,7 @@ var resetbutton = document.createElement("button");
     
 
 
-/*✅*/ function toggleRecButton() { /*add and remove Next/Reveal button according to view number*/
+/*✅*/ function toggleRecButton() { /*add and remove Next/Reveal button according to View number*/
     console.log("toggleRecButton");
     var recbutton = document.getElementById('recbutton');
     if (state.currentPage === 0 || state.currentPage === 5){
