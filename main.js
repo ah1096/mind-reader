@@ -7,28 +7,28 @@ let state = {
 
     views: [
         /*VIEW 1*/
-        {headertext : "I can read your mind",
+        {headertext : "I can read <br> your mind",
         recbutton : null,
         helpertext : " ",
         circlebutton : "go",
         },
 
         /*VIEW 2*/
-        {headertext: "Pick a number from 01-99",
+        {headertext: "Pick a number <br> from 01-99",
         recbutton : "next",
         helpertext :"when you have your number click next",
         circlebutton : "reset",
         },
 
         /*VIEW 3*/
-        {headertext : "Add both digits together to get a new number",
+        {headertext : "Add both digits <br> together <br> to get a new number",
         recbutton : "next",
         helpertext : "Ex: 14 is 1 + 4 = 5, click Next to proceed",
         circlebutton : "reset",
         },
 
         /*VIEW 4*/
-        {headertext : "Subtract your new number from the original number",
+        {headertext : "Subtract your new number <br> from <br> the original number",
         recbutton : "next",
         helpertext : "Ex: 14 - 5 = 9",
         circlebutton : "reset",

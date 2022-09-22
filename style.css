@@ -1,21 +1,32 @@
 /*typewriter effect on header*/
-.typed-out {
-    overflow-x: hidden; /*make sure the text content isn’t revealed until the typing effect has started.*/
-    border-right: .15em solid orange; /*create the typewriter cursor.*/
-    font-size: calc(1.375rem + 1.5vw);
-    width: 0; /*make sure the text content isn’t revealed until the typing effect has started.*/
-    animation: 
-    typing 2s steps(20, end) forwards;
+.wrapper {
+    height: 8vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: right;
   }
-
-  .typewriter {
-    display: inline-block;
+  
+  .typing-demo {
+    width: 25ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
   }
-
+  
   @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from {
+      width: 0
+    }
   }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+    
 /*end typewriter effect*/
 
 
