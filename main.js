@@ -64,22 +64,21 @@ var circlebutton = document.getElementById("circlebutton");
     headerText.textContent = state.views[state.currentPage].headertext;
     helperText.textContent = state.views[state.currentPage].helpertext;
     recbutton.textContent = state.views[state.currentPage].recbutton;  
-    circlebutton.textContent = state.views[state.currentPage].circlebutton;  
+    circlebutton.textContent = state.views[state.currentPage].circlebutton; 
+    
+    toggleRecButton()
 }/* changes page to next view when circle button is clicked */
 
 circlebutton.addEventListener ("click", () => {state.currentPage++, updatePage()});
 
-function toggleRecButton() { /*add a conditional to make this appear when it is needed*/
-    
+/*✅*/ function toggleRecButton() { /*add and remove Next/Reveal button according to view number*/
+    console.log("toggleRecButton");
     var recbutton = document.getElementById('recbutton');
-
-    if (currentPage === 0){
+    if (state.currentPage === 0 || state.currentPage === 5){
             recbutton.classList.add('d-none')}
         else{
+            recbutton.classList.remove('d-none')
             recbutton.classList.add('d-block')};
-
-    if (currentPage > 0) {
-        recbutton.classList.add('d-none')};
 }
     toggleRecButton()
     
