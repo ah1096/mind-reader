@@ -17,35 +17,35 @@ let state = {
         {headertext: "Pick a number from 01-99",
         recbutton : "NEXT", /* --> proceed to VIEW 3 */
         helpertext :"when you have your number click next",
-        circlebutton : null,/*resetPage(), /* --> return to VIEW 1 */
+        circlebutton : "reset",/*resetPage(), /* --> return to VIEW 1 */
         },
 
         /*VIEW 3*/
         {headertext : "Add both digits together to get a new number",
         recbutton : "NEXT", /* --> proceed to VIEW 4 */
         helpertext : "Ex: 14 is 1 + 4 = 5, click Next to proceed",
-        circlebutton : null,/*resetPage() /* --> return to VIEW 1 */
+        circlebutton : "reset",/*resetPage() /* --> return to VIEW 1 */
         },
 
         /*VIEW 4*/
         {headertext : "Subtract your new number from the original number",
         recbutton : "NEXT", /*--> proceed to VIEW 5*/
         helpertext : "Ex: 14 - 5 = 9",
-        circlebutton : null,/*resetPage() /*--> return to VIEW 1 */
+        circlebutton : "reset",/*resetPage() /*--> return to VIEW 1 */
         },
 
         /*VIEW 5*/
         {headertext : "SYMBOLS",
         recbutton : "REVEAL", /*--> proceed to VIEW 6*/
         helpertext : "Find your new number. Note the symbol beside the number",
-        circlebutton : null,/*resetButton(), /*--> return to VIEW 1*/
+        circlebutton : "reset",/*resetButton(), /*--> return to VIEW 1*/
         },
 
         /*VIEW 6*/
         {headertext : null,/*displaySymbols(), /* --> replace header text with randomized symbol obtained from function*/
         recbutton : null,
-        helpertext : "Your symbol is"  /*displaySymbol()*/,
-        circlebutton : null,/*resetPage(),/* --> return to VIEW 1*/
+        helpertext : "Your symbol is ???"  /*displaySymbol()*/,
+        circlebutton : "reset",/*resetPage(),/* --> return to VIEW 1*/
         },
     ]
 }
@@ -60,26 +60,29 @@ var circlebutton = document.getElementById("circlebutton");
 
 ///////* FUNCTIONS *///////
 
-function updatePage() { 
+/*✅*/ function updatePage() { 
     headerText.textContent = state.views[state.currentPage].headertext;
     helperText.textContent = state.views[state.currentPage].helpertext;
-    recbutton.textContent = state.views[state.currentPage].recbutton;
-    
+    recbutton.textContent = state.views[state.currentPage].recbutton;  
+    circlebutton.textContent = state.views[state.currentPage].circlebutton;  
 }/* changes page to next view when circle button is clicked */
 
 circlebutton.addEventListener ("click", () => {state.currentPage++, updatePage()});
 
-function removeRecButton() { /*add a conditional to make this appear when it is needed*/
+function toggleRecButton() { /*add a conditional to make this appear when it is needed*/
     
-    var button = document.getElementById('recbutton');
+    var recbutton = document.getElementById('recbutton');
 
-    if (state.currentPage = 0){
-    button.classList.replace('d-none', 'd-block')};
+    if (currentPage === 0){
+            recbutton.classList.add('d-none')}
+        else{
+            recbutton.classList.add('d-block')};
+
+    if (currentPage > 0) {
+        recbutton.classList.add('d-none')};
 }
-   
-
-   removeRecButton();
-
+    toggleRecButton()
+    
 
    /*
 function resetPage() { /* returns to View 1 */
