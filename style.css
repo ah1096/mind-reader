@@ -6,6 +6,10 @@
     overflow: auto;
 }
 
+p {
+    font-family:'Courier New', Courier, monospace;
+    color: black;
+}
 
 button {
     border: none;
