@@ -4,5 +4,4 @@ AWESOME INC PROJECT: For this project, we will be implementing state management 
 /////////ALCHEMICAL SYMBOLS LINK///////
 https://www.webnots.com/alt-code-shortcuts-for-alchemical-symbols/
 
-/////CSS TYPEWRTIER EFFECT LINK///////
-https://www.sitepoint.com/css-typewriter-effect/
+
