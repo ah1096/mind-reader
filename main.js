@@ -70,18 +70,23 @@ function updatePage() {
 circlebutton.addEventListener ("click", () => {state.currentPage++, updatePage()});
 
 function removeRecButton() { /*add a conditional to make this appear when it is needed*/
-    var elem = document.getElementById('recbutton');
-    elem.parentNode.removeChild(elem);
-   }
+    
+    var button = document.getElementById('recbutton');
+
+    if (state.currentPage = 0){
+    button.classList.replace('d-none', 'd-block')};
+}
+   
 
    removeRecButton();
 
 
+   /*
 function resetPage() { /* returns to View 1 */
 
-}
 
-function toggleButton() { /* shows or hides button upon page update */
+
+/*function toggleButton() { /* shows or hides button upon page update */
 /* appendChild to add button???
 how do I remove the button???*/
-}
+
