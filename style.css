@@ -1,9 +1,29 @@
+/*typewriter effect on header*/
+.typed-out {
+    overflow-x: hidden; /*make sure the text content isn’t revealed until the typing effect has started.*/
+    border-right: .15em solid orange; /*create the typewriter cursor.*/
+    font-size: calc(1.375rem + 1.5vw);
+    width: 0; /*make sure the text content isn’t revealed until the typing effect has started.*/
+    animation: 
+    typing 2s steps(20, end) forwards;
+  }
+
+  .typewriter {
+    display: inline-block;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+/*end typewriter effect*/
 
 
 #header {
     font-family:'Courier New', Courier, monospace;
     color: black;
     overflow: auto;
+
 }
 
 p {
