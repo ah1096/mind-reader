@@ -26,3 +26,9 @@ button {
     border-radius: 50%;
     padding: 20px;
 }
+
+#resetbutton {
+    margin-top: 40px;
+    border-radius: 50%;
+    padding: 20px;
+}

@@ -89,6 +89,7 @@ let resetbutton = document.createElement("button");
             recbutton.classList.remove('d-none')
             recbutton.classList.add('d-block')};
 }
+
     toggleRecButton()
 
 /*✅*/ function resetPage(){ /*return to View 0 (first "page") */
