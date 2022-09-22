@@ -80,6 +80,7 @@ let resetbutton = document.createElement("button");
     resetbutton.innerHTML = "reset";
     document.body.appendChild(resetbutton);
 
+
 /*✅*/ function toggleRecButton() { /*add and remove Next/Reveal button according to view number*/
     console.log("toggleRecButton");
     var recbutton = document.getElementById('recbutton');
@@ -92,6 +93,9 @@ let resetbutton = document.createElement("button");
 
     toggleRecButton()
 
+recbutton.addEventListener ("click", () => {state.currentPage++, updatePage()})
+
+
 /*✅*/ function resetPage(){ /*return to View 0 (first "page") */
     if (state.currentPage > 0){
         state.currentPage = 0;
@@ -101,7 +105,7 @@ let resetbutton = document.createElement("button");
     }
 }
 
-recbutton.addEventListener ("click", () => {resetPage()});
+resetbutton.addEventListener ("click", () => {resetPage()});
     
 
    /*
