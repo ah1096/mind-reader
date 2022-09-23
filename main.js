@@ -80,6 +80,7 @@ var resetbutton = document.createElement("button");
     resetbutton.innerHTML = "reset";
     resetbutton.className = "resetbutton";
     resetbutton.setAttribute('id', 'resetbutton'); /*add ID to be used in toggleButtons function*/
+    resetbutton.setAttribute('title', 'imbibe tincture of amnesia');
     document.body.appendChild(resetbutton);
     
 /////*FUNCTIONS CONTINUED*/////
