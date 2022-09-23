@@ -8,6 +8,11 @@ div{
     text-align: center;
 }
 
+.headerscroll {
+    height: 200px;
+    overflow: scroll;
+}
+
 #header {
     font-family:'Courier New', Courier, monospace;
     color: #524848;
