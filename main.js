@@ -35,16 +35,16 @@ let state = {
         },
 
         /*VIEW 5*/
-        {headertext : "<em> the orb resonates with mysterious power </em> <br> 1 - A <br> 2 - B <br> 3 - C <br> 4 - D <br> 5 - E <br> 6 - F <br> 7 - G <br> 8 - H <br> 9 - I <br> 10 - J",
+        {headertext : "<em> the orb resonates with mysterious power </em> <br> 1 - 🌕 <br> 2 - <em> Higitus figitus zumbakazing!! </em> <br> 3 - toads. <br> 4 - 🜃 <br> 5 - ╎⎓ ||𝙹⚍ ᓵᔑリ ∷ᒷᔑ↸ ℸ ̣ ⍑╎ᓭ ||𝙹⚍ ᔑ∷ᒷ ᔑ nerd <br> 6 - 🜂 <br> 7 - この文章を翻訳する者は、一口のミツバチに呪われているのである。 <br> 8 - 🦎 <br> 9 - Everyone saw that embarassing thing you did. <br> 10 - afob fo sdnah eht ta hsirep tlahs uoht",
         recbutton : "peer", 
         helpertext : "there is no going back now. peer into the orb, traveller",
         circlebutton : "reset",
         },
 
         /*VIEW 6*/
-        {headertext : "I",
+        {headertext : "the orbs speaks: <em> Everyone saw that embarassing thing you did. </em>",
         recbutton : null,
-        helpertext : "your fate is revealed",
+        helpertext : "your fate is revealed. remember, traveller. knowledge is a powerful and dangerous thing.",
         circlebutton : "reset",
         },
     ]

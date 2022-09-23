@@ -1,5 +1,10 @@
 body{
     background-color: #D2e2e2;
+    text-align: center;
+}
+
+div{
+    text-align: center;
 }
 
 #header {
@@ -23,6 +28,7 @@ button {
     background-color: #50a6be;
     color: white;
     text-align: center;
+    display: grid;
 }
 
 #recbutton {
@@ -45,7 +51,6 @@ button {
     text-align: center;
     cursor: pointer;
     font-family:'Courier New', Courier, monospace;
-
 }
 
 .resetbutton {
@@ -58,4 +63,5 @@ button {
     text-align: center;
     cursor: pointer;
     font-family:'Courier New', Courier, monospace;
+
 }
