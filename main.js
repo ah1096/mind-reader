@@ -7,44 +7,44 @@ let state = {
 
     views: [
         /*VIEW 1*/
-        {headertext : "I can read your mind",
+        {headertext : "Welcome, traveller. Do you wish to know the arcane secrets of the orb?",
         recbutton : null,
         helpertext : " ",
-        circlebutton : "go",
+        circlebutton : "yes",
         },
 
         /*VIEW 2*/
-        {headertext: "Pick a number from 01-99",
-        recbutton : "next",
-        helpertext :"when you have your number click next",
+        {headertext: "Very well. Conjure in your mind's eye a number between 01 and 99.",
+        recbutton : "proceed",
+        helpertext :"we may proceed once you have concluded your contemplation",
         circlebutton : "reset",
         },
 
         /*VIEW 3*/
-        {headertext : "Add both digits together to get a new number",
-        recbutton : "next",
-        helpertext : "Ex: 14 is 1 + 4 = 5, click Next to proceed",
+        {headertext : "Calculate the sum of both digits to obtain a new number.",
+        recbutton : "yes, proceed",
+        helpertext : "for example:: 14 is 1 + 4 = 5. are you prepared to proceed?",
         circlebutton : "reset",
         },
 
         /*VIEW 4*/
         {headertext : "Subtract your new number from the original number",
-        recbutton : "next",
-        helpertext : "Ex: 14 - 5 = 9",
+        recbutton : "continue",
+        helpertext : "for example: 14 - 5 = 9. shall we continue?",
         circlebutton : "reset",
         },
 
         /*VIEW 5*/
-        {headertext : "1 - A <br> 2 - B <br> 3 - C <br> 4 - D <br> 5 - E <br> 6 - F <br> 7 - G <br> 8 - H <br> 9 - I <br> 10 - J",
-        recbutton : "reveal", 
-        helpertext : "Find your new number. Note the symbol beside the number",
+        {headertext : "<em> the orb resonates with mysterious power </em> <br> 1 - A <br> 2 - B <br> 3 - C <br> 4 - D <br> 5 - E <br> 6 - F <br> 7 - G <br> 8 - H <br> 9 - I <br> 10 - J",
+        recbutton : "peer", 
+        helpertext : "there is no going back now. peer into the orb, traveller",
         circlebutton : "reset",
         },
 
         /*VIEW 6*/
         {headertext : "I",
         recbutton : null,
-        helpertext : "Here is your symbol",
+        helpertext : "your fate is revealed",
         circlebutton : "reset",
         },
     ]
