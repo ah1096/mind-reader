@@ -1,8 +1,10 @@
-
+body{
+    background-color: #D2e2e2;
+}
 
 #header {
     font-family:'Courier New', Courier, monospace;
-    color: black;
+    color: #524848;
     text-align: center;
 
 }
@@ -13,12 +15,12 @@ img {
 
 p {
     font-family:'Courier New', Courier, monospace;
-    color: black;
+    color: #7c6764;
 }
 
 button {
     border: none;
-    background-color: pink;
+    background-color: #50a6be;
     color: white;
     text-align: center;
 }
@@ -43,7 +45,7 @@ button {
     text-align: center;
     cursor: pointer;
     font-family:'Courier New', Courier, monospace;
-    
+
 }
 
 .resetbutton {
