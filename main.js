@@ -10,7 +10,7 @@ let state = {
         {headertext : "Welcome, traveller. Do you wish to know the arcane secrets of the orb?",
         recbutton : null,
         helpertext : " ",
-        circlebutton : "yes",
+        circlebutton : "yes?",
         },
 
         /*VIEW 2*/
